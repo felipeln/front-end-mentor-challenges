@@ -1,0 +1,190 @@
+:root{
+    --red: hsl(0, 100%, 74%);
+    --gray: hsl(246, 25%, 77%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url(../assets/bg-intro-desktop.png);
+    background-color: var(--red);
+}
+main{
+    width: 100%;
+    height: auto;
+
+    position: relative;
+    
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+.text-content, .form-content{
+    padding: 0 30px;
+}
+
+.text-content{
+    color: #fff;
+}
+.text-content h1{
+    font-size: 3em;
+}
+
+.form-content{
+    max-width: 500px;
+    width: 100%;
+}
+
+form{
+    background-color: #fff;
+    border-radius: 8px;
+
+    padding: 20px;
+
+    box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.2);
+}
+
+.form-content button{
+    width: 100%;
+
+    padding: 20px;
+    border: none;
+
+    color: hsl(246, 25%, 77%);
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+    box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.2);
+
+    font-weight: 700;
+}
+.form-content button{
+    background-color:  hsl(248, 32%, 49%);
+}
+.form-content button span{
+    
+    color: #fff;
+}
+
+fieldset{
+    border: none;
+}
+.field{
+    width: 100%;
+    position: relative;
+
+    margin-bottom: 30px;
+}
+.field input{
+    width: 100%;
+    border: 2px solid var(--gray);
+
+    padding: 15px 25px;
+    border-radius: 4px;
+}
+.field img{
+    position: absolute;
+
+    top: 30%;
+    right: 16px;
+
+    display: none;
+}
+.field small{
+    position: absolute;
+    right: 8px;
+    bottom: -25px;
+
+    color: var(--red);
+    display: none;
+}
+/* error */
+.field.error input{
+    border-color: var(--red) ;
+}
+.field.error input::placeholder{
+    color: var(--red) ;
+}
+.field.error img, .field.error small{
+    display: block;
+}
+
+.claim{
+    background-color: hsl(154, 59%, 51%);
+    width: 100%;
+
+    padding: 15px 25px;
+    margin: 5px 0;
+    border: none;
+
+    color: #fff;
+    border-radius: 4px;
+    
+    font-weight: bold;
+    border-bottom: 3px solid hsl(154, 58%, 42%);
+
+    transition: all ease-in 0.4s;
+}
+.claim:active{
+    position: relative;
+    top: 3px;
+
+    border: none;
+}
+
+.terms{
+    font-size: 12px;
+
+    text-align: center;
+    color: var(--gray);
+}
+.terms span{
+    color: var(--red) ;
+}
+
+
+
+footer{
+    width: 100%;
+
+    text-align: center;
+    color: #000;
+    
+    padding: 20px;
+    
+}
+footer a{
+    color: #fff;
+}
+
+@media (max-width: 1000px){
+    .text-content{
+        text-align: center;
+    }
+
+    .text-content, .form-content{
+        padding: 30px;
+    }
+}
+
+@media (max-widtH: 600px){
+    .text-content h1{
+        font-size: 2em;
+    }
+}
