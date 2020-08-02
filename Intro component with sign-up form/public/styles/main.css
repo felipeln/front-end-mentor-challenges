@@ -1,3 +1,8 @@
+:root{
+    --red: hsl(0, 100%, 74%);
+    --gray: hsl(246, 25%, 77%);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -7,7 +12,7 @@ body{
     font-family: 'Poppins', sans-serif;
 
     background-image: url(../assets/bg-intro-desktop.png);
-    background-color: hsl(0, 100%, 74%) ;
+    background-color: var(--red);
 }
 main{
     width: 100%;
@@ -17,136 +22,169 @@ main{
     
     
 }
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
-    
 
-    
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+.text-content, .form-content{
+    padding: 0 30px;
 }
 
 .text-content{
-    padding: 20px; 
-    justify-self: flex-end;
     color: #fff;
 }
 .text-content h1{
     font-size: 3em;
-    font-weight: 700;
 }
-
 
 .form-content{
-    width: 450px;
-
-    
-}
-button{
+    max-width: 500px;
     width: 100%;
-    padding: 20px;
-    background-color: hsl(248, 32%, 49%);
-    
-    border: none;
+}
+
+form{
+    background-color: #fff;
     border-radius: 8px;
+
+    padding: 20px;
+
+    box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.2);
+}
+
+.form-content button{
+    width: 100%;
+
+    padding: 20px;
+    border: none;
 
     color: hsl(246, 25%, 77%);
-    font-weight: 400;
+    border-radius: 4px;
 
-    margin: 20px 0;
+    margin-bottom: 30px;
+    box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.2);
 
-    box-shadow: 0px 8px 0px -2px rgba(0,0,0,0.19);
-
-} 
-button span{
-    color: #fff;
     font-weight: 700;
 }
-form{
-    width: 100%;
-    background-color: #fff;
-    padding: 30px;
-
-    border-radius: 8px;
-
-    box-shadow: 0px 8px 0px -2px rgba(0,0,0,0.19);
+.form-content button{
+    background-color:  hsl(248, 32%, 49%);
 }
+.form-content button span{
+    
+    color: #fff;
+}
+
 fieldset{
     border: none;
 }
-fieldset input,form input{
+.field{
     width: 100%;
-    padding: 15px;
+    position: relative;
 
+    margin-bottom: 30px;
+}
+.field input{
+    width: 100%;
+    border: 2px solid var(--gray);
+
+    padding: 15px 25px;
     border-radius: 4px;
-    border: 2px solid hsl(246, 25%, 77%);
+}
+.field img{
+    position: absolute;
 
-    margin: 10px 0;
-    font-weight: bold;
+    top: 30%;
+    right: 16px;
+
+    display: none;
+}
+.field small{
+    position: absolute;
+    right: 8px;
+    bottom: -25px;
+
+    color: var(--red);
+    display: none;
+}
+/* error */
+.field.error input{
+    border-color: var(--red) ;
+}
+.field.error input::placeholder{
+    color: var(--red) ;
+}
+.field.error img, .field.error small{
+    display: block;
 }
 
 .claim{
-    color: #fff;
-    font-weight: bold;
     background-color: hsl(154, 59%, 51%);
+    width: 100%;
+
+    padding: 15px 25px;
+    margin: 5px 0;
     border: none;
-    border-bottom: 4px solid hsl(154, 56%, 46%);
-}
-.terms{
-    text-align: center;
-    font-size: 11px;
-    color: hsl(246, 25%, 77%);
+
+    color: #fff;
+    border-radius: 4px;
     
+    font-weight: bold;
+    border-bottom: 3px solid hsl(154, 58%, 42%);
+
+    transition: all ease-in 0.4s;
+}
+.claim:active{
+    position: relative;
+    top: 3px;
+
+    border: none;
+}
+
+.terms{
+    font-size: 12px;
+
+    text-align: center;
+    color: var(--gray);
 }
 .terms span{
-    color: hsl(0, 100%, 74%) ;
-    font-weight: bold;
+    color: var(--red) ;
 }
 
-footer{
 
+
+footer{
     width: 100%;
 
     text-align: center;
     color: #000;
     
     padding: 20px;
-
-    
     
 }
 footer a{
     color: #fff;
 }
 
-/* responsive */
-@media (max-width: 768px){
-    .container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
-        gap: 0;
-        
-        justify-items: center;
-    }
+@media (max-width: 1000px){
     .text-content{
-        justify-self: center;
-        align-self: flex-end;
         text-align: center;
     }
 
-    .form-content,.text-content{
-
-        width: 90%;
+    .text-content, .form-content{
+        padding: 30px;
     }
+}
+
+@media (max-widtH: 600px){
     .text-content h1{
-        font-size: 1.5em;
-
-
+        font-size: 2em;
     }
-    .text-content p{
-        font-size: 16px;
-        padding: 10px 0;
-    }
-    
 }
