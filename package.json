@@ -1,0 +1,27 @@
+{
+  "name": "Frontend-mentor-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felipeln/Frontend-mentor-challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Felipeln/Frontend-mentor-challenges/issues"
+  },
+  "homepage": "https://github.com/Felipeln/Frontend-mentor-challenges#readme"
+}

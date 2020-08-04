@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipeln | Frontend mentor challenges</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main class="container">
+        <h1>Front-end mentor challenges</h1>
+        
+        <section id="projetos-container">
+            <h2>Projetos</h2>
+    
+            <div class="projetos">
+
+                {% for desafio in desafios %}
+                    <div class="projeto-card">
+                        
+                        <a href="{{desafio.pagina}}">
+
+                            <img src="{{desafio.image}}" alt="">
+
+                        </a>
+                        <div class="info">
+                            <h3>{{desafio.title}}</h3>
+
+                            <div class="info2">
+                                {% for tecnologia in desafio.tecnologias %}
+                                    <span>{{tecnologia}}</span>
+                                {% endfor %}
+                                
+
+                                 <a href="{{desafio.link}}" target="_blank">Desafio</a>
+                            </div>
+                           
+                        </div>
+
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <footer>
+            <p>Coded by <a href="https://github.com/Felipeln">Felipeln</a></p>
+            
+        </footer>
+    </main>
+
+</body>
+</html>
