@@ -1,7 +1,7 @@
 let darkMode = localStorage.getItem('darkMode')
 const checkbox = document.querySelector('#switch')
 
-const ball = document.querySelector('.dark-theme label span')
+
 
 const enableDarkMode = () => {
     document.body.classList.add('darkMode')
@@ -12,16 +12,24 @@ const disableDarkMode = () => {
     localStorage.setItem('darkMode', 'disabled')
 }
 
+
 if(darkMode === 'enabled'){
     enableDarkMode()
-    ball.style.left = '5px'
+    checkbox.checked = true
 }
+
 
 checkbox.addEventListener('click',() =>{
     darkMode = localStorage.getItem('darkMode')
     if(darkMode != 'enabled'){
         enableDarkMode()
+        checkbox.checked = true
+       
     }else{ 
         disableDarkMode()
+        checkbox.checked = false
     }
 })
+
+
+
