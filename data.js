@@ -17,6 +17,13 @@ const desafios = [
         tecnologias: ['HTML','CSS','JS']
         
     },
+    {
+        title: 'Social media dashboard with theme switcher',
+        image: './Social media dashboard with theme switcher/design/desktop-design-dark.jpg',
+        pagina: '/Social media dashboard with theme switcher/src/index.html',
+        link: 'https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H',
+        tecnologias: ['HTML','CSS','JS']
+    }
 
 ]
 
