@@ -54,7 +54,7 @@ body{
 }
 header{
     background-color: var(--menu-bg);
-    height: 200px;    
+    height: 220px;    
     border-radius: 0 0 8px 8px;
 }
 
@@ -340,7 +340,7 @@ h2{
     }
     .dark-theme{
         width: 100%;
-
+        padding: 10px 0;
         display: flex;
         justify-content: space-between;
     }
@@ -350,5 +350,11 @@ h2{
     .social-cards{
         grid-template-columns: 1fr;
         
+    }
+    
+}
+@media (max-width: 375px){
+    .cards-container{
+        top: -20px;
     }
 }
