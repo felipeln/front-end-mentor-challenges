@@ -19,7 +19,6 @@ body{
     padding-top: 100px;
 }
 
-/* titulos fonte = font-family: 'DM Serif Display', serif; */
 a{
     text-decoration: none;
     color: inherit;
@@ -51,9 +50,11 @@ header{
     left: 0;
 
     z-index: 999;
+
+    box-shadow: 0 0 3px rgb(0, 0, 0,0.7);
 }
 
-nav{
+.menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,9 +76,15 @@ nav ul li{
     font-size: 14px;
 }
 li .button{
+    border: 3px solid var(--dark-violet);
+    color: var(--dark-violet);
+    padding: 16px 26px;
+
+    transition: all ease 0.8ms;
+}
+li .button:active{
     background-color: var(--dark-violet);
     color: var(--light-gray);
-    padding: 16px 26px;
 }
 nav ul li:active{
     color: var(--dark-violet);
@@ -144,18 +151,162 @@ article p{
     line-height: 26px;
 }
 .intro-grid img{
+    width: 100%;
     justify-self: flex-end;
 }
-
 button.button{
-    background-color: var(--light-gray);
+    background-color: var(--violet);
+
+    border: 3px solid var(--light-gray);
+
+    color: var(--light-gray);
     padding: 16px 26px;
 
     outline: none;
-    border: 0;
+
     font-weight: 700;
 
-    color: var(--dark-violet);
     text-transform: uppercase;
     letter-spacing: 3px;
+
+    transition: all ease 0.8ms;
 }
+button.button:active{
+    background-color: var(--light-gray);
+    
+
+    color: var(--dark-violet);
+  
+}
+
+/* prices */
+
+#prices{
+    margin-top: 350px;
+}
+
+#prices article h1{
+    padding: 60px 0;
+    position: relative;
+    color: var(--dark-violet);
+
+}
+#prices h1::after{
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 150px;
+    
+    height: 2px;
+    background-color: var(--gray-violet);
+}
+#prices article .price-cards{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    
+}
+.price-cards .card{
+    width: minmax(200px,400px);
+    height: 300px;
+    
+    align-self: center;
+}
+
+/* work */
+#how-we-work{
+    margin: 100px 0;
+}
+.work{
+    background-color: var(--violet);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 30px 80px;
+}
+.work h1{
+    align-self: center;
+    justify-self: center;
+    font-size: 3em;
+
+    color: var(--light-gray);
+}
+.work .button{
+    width: 200px;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: var(--light-gray);
+    padding: 50px 0;
+
+    position: relative;
+
+    min-height: 400px;
+}
+footer .svg.svg.left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+footer .footer-top{
+    position: relative;
+    padding-bottom: 50px;
+}
+.footer-top .socials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+
+    position: relative;
+}
+
+.footer-top::after{
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    
+    border-bottom: 1px solid var(--gray-violet);
+}
+
+/* footer menu grid */
+.footer-grid-menu{
+    margin-top: 50px;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    position: relative;
+}
+.footer-menu{
+    max-width: 250px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 50px repeat(4,30px) ;
+}
+.footer-menu span{
+    font-weight: 700;
+    color: var(--gray-violet);
+}
+.footer-menu li{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--dark-violet);
+}
+
+/* responsive */
