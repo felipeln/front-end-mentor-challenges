@@ -100,7 +100,6 @@ nav ul li:active{
 /* introduçao */
 #introduction{
     background-color: var(--violet);
-    
 
     color: var(--light-gray);
 
@@ -137,9 +136,7 @@ nav ul li:active{
     gap: 40px;
 
 }
-.intro-grid article{
-    /* width: 550px; */
-    
+.intro-grid article{    
     align-self: flex-start;
     
 
@@ -191,7 +188,6 @@ button.button{
 button.button:active{
     background-color: var(--light-gray);
     
-
     color: var(--dark-violet);
   
 }
@@ -350,7 +346,6 @@ footer .footer-top{
 
         flex-direction: column;
         justify-content: flex-start;
-
         
         position: absolute;
 
@@ -359,7 +354,6 @@ footer .footer-top{
 
         width: 100%;
         height: 100vh;
-        
         
         visibility: hidden;
         opacity: 0;
@@ -377,7 +371,6 @@ footer .footer-top{
         margin-top: 60px;
 
         font-size: 1.1em;
-
         
     }
     li .button{
@@ -424,7 +417,6 @@ footer .footer-top{
         right: 0;
         bottom: -75%;
     }
-
 
     .intro-grid{
         padding: 0;
@@ -510,7 +502,6 @@ footer .footer-top{
         margin-bottom: 20px;
     }
 
-
     .footer-grid-menu{
         grid-template-columns: 1fr;
         gap: 50px;
@@ -521,13 +512,6 @@ footer .footer-top{
         justify-items: center;
 
         min-height: 180px;
-
-        
-    }
-
-    footer .svg.left{
-        /* display: none; */
-        width: 100%;
     }
 }
 

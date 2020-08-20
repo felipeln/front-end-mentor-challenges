@@ -22,12 +22,3 @@ function mobileLink(){
 }
 
 
-// if(window.innerWidth < 900){
-//     document.querySelector('#introduction .right').src = "/public/assets/bg-pattern-intro-right-mobile.svg"
-
-//     document.querySelector('#introduction .left').src = "/public/assets/bg-pattern-intro-left-mobile.svg"
-// }else if(window.innerWidth > 900){
-//     document.querySelector('#introduction .right').src = "/public/assets/bg-pattern-intro-right-desktop.svg"
-
-//     document.querySelector('#introduction .left').src = "/public/assets/bg-pattern-intro-left-desktop.svg"
-// }
