@@ -23,6 +23,12 @@ const desafios = [
         pagina: '/Social media dashboard with theme switcher/src/index.html',
         link: 'https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H',
         tecnologias: ['HTML','CSS','JS']
+    },{
+        title: 'Insure Landing Page',
+        image: '/Insure landing page/design/desktop-design.jpg',
+        pagina: '/Insure landing page/src/index.html',
+        link: 'https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8',
+        tecnologias: ["HTML","CSS","JS"]
     }
 
 ]

@@ -61,6 +61,11 @@ body{
 
 .projeto-card img{
     width: 100%;
+    
+    object-fit: cover;
+    object-position: top;
+
+    height: 200px;
     border-radius: 4px 4px 0 0;
 
 }
