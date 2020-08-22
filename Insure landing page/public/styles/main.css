@@ -155,7 +155,6 @@ article::after{
     border-top: 2px solid  var(--light-gray);
 }
 article h1{
-    /* width: 500px; */
     font-size: 3.5em;
 
     line-height: 70px;
@@ -530,6 +529,5 @@ footer .footer-top{
     .work{
         padding: 30px 20px;
     }
-
     
 }
