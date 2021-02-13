@@ -8,15 +8,16 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
-.container{
+/* .container{
     max-width: 1200px;
     width: 100%;
 
     margin: 0 auto;
     margin-top: 40px;
-}
+} */
 .container h1 , .container h2{
     text-align: center;
+    padding: 10px 0;
 }
 
 .sobre p{
@@ -32,21 +33,22 @@ body{
     font-size: 1.8em;
 }
 
-.projetos{
+/* .projetos{
     display: flex;
     justify-content: center;
 
     flex-wrap: wrap;
-}
+} */
 
 .projeto-card{
-    width: 340px;
+    /* width: 340px; */
     background-color: #fff;
 
-    position: relative;
+    /* position: relative; */
 
-    margin: 30px;
+    /* margin: 30px; */
 
+    margin-bottom: 60px;
     border-radius: 8px;
     box-shadow: 4px 10px 16px -6px rgba(0,0,0,0.51);
     
@@ -71,10 +73,13 @@ body{
 }
 .info{
     padding: 20px;
+    height: 130px;
+
+    border-top: 1px solid gainsboro;
 }
 .info h3{
     font-size: 1.1em;
-    margin-bottom: 20px;
+    min-height: 40px;
 }
 
 .info2 {

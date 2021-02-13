@@ -30,7 +30,6 @@ const desafios = [
         link: 'https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8',
         tecnologias: ["HTML","CSS","JS"]
     }
-
 ]
 
 module.exports = desafios

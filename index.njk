@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felipeln | Frontend mentor challenges</title>
 
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -16,10 +17,11 @@
         <section id="projetos-container">
             <h2>Projetos</h2>
     
-            <div class="projetos">
-
+            <div class="projetos container">
+                <div class="row">
                 {% for desafio in desafios %}
-                    <div class="projeto-card">
+                <div class="col-sm-12 col-md-6 col-xl-4">
+                    <div class="projeto-card ">
                         
                         <a href="{{desafio.pagina}}">
 
@@ -41,12 +43,14 @@
                         </div>
 
                     </div>
+                </div>
                 {% endfor %}
+                </div>
             </div>
         </section>
 
         <footer>
-            <p>Coded by <a href="https://github.com/Felipeln">Felipeln</a></p>
+            <p>Coded by <a href="https://github.com/Felipeln" target="_blank">Felipeln</a></p>
             
         </footer>
     </main>
