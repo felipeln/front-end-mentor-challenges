@@ -29,6 +29,13 @@ const desafios = [
         pagina: '/Insure landing page/src/index.html',
         link: 'https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8',
         tecnologias: ["HTML","CSS","JS"]
+    },
+    {
+        title: 'Huddle-landing-page-with-alternating-feature-blocks',
+        image: '/Huddle-landing-page-with-alternating-feature-blocks/design/desktop-design.jpg',
+        pagina: '/Huddle-landing-page-with-alternating-feature-blocks/src/index.html',
+        link: 'https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100',
+        tecnologias: ["HTML","CSS"]
     }
 ]
 

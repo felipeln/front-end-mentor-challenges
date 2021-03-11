@@ -98,7 +98,7 @@ body{
     color: cornflowerblue;
 }
 .info2 span:nth-child(3){
-    color: green;
+    color: #000;
 }
 .info2 span:nth-child(4){
     color: #649d66;
@@ -110,7 +110,7 @@ body{
 
     padding: 8px 12px;
 
-    background-color: #000000;
+    background-color: #84e;
     color: #F5F5F5;
     border-radius: 8px;
 

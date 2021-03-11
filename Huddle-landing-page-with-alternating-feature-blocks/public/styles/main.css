@@ -1,0 +1,270 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+h1,h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+header{
+    background-image: url(/public/assets/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+
+    background-size: contain;
+    background-position: right top;
+}
+
+.header-menu{
+    padding: 20px;
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo{
+    padding: 10px;
+}
+
+.header-menu button{
+    float: right;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 3px hsl(193, 100%, 96%);
+    padding: 16px 32px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+
+    cursor: pointer;
+}
+.header-menu button:hover{
+    color: hsl(208, 11%, 55%);
+}
+
+/* intro */
+.intro{
+    display: flex;
+    padding: 40px 20px;
+}
+.intro-info,.intro-img{
+    flex: 1;
+    
+}
+.intro-info, .intro-img{
+    align-self: center;
+}
+
+.intro-info h1{
+    color: hsl(192, 100%, 9%);
+    
+    max-width: 400px;
+    font-size: 2em;
+
+}
+.intro-info p{
+   line-height: 1.5em;
+   color:  hsl(192, 100%, 9%);
+   
+   max-width: 490px;
+   margin: 30px 0 40px 0;
+}
+
+.btn{
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    padding: 16px 60px;
+
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.btn:hover{
+    background-color: rgba(255, 82, 191,0.5);
+}
+
+/* sobre */
+main{
+    position: relative;
+}
+.sobre{
+    padding: 60px 0;
+}
+
+.sobre-item{
+    display: flex;
+    padding: 20px;
+}
+.sobre-info,.sobre-img{
+    flex: 1;
+    align-self: center;
+}
+.sobre-info, .sobre-img{
+    padding: 60px;
+}
+.sobre-info h2{
+    color: hsl(192, 100%, 9%);
+    padding: 20px 0;
+}
+.sobre-info p{
+    max-width: 460px;
+    line-height: 1.5em;
+    color: hsl(208, 11%, 55%);
+}
+.sobre-img.par{
+    order: -1;
+}
+
+
+/* info-box */
+.info-box-container{
+    padding: 0 20px;
+}
+.info-box{
+    max-width: 600px;
+    padding: 60px 40px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    position: relative;
+    bottom: -50px;
+    
+}
+.info-box h2{
+    margin-bottom: 40px;
+}
+
+
+footer{
+    background-color: hsl(192, 100%, 9%);
+
+    font-size: 14px;
+    padding: 80px 60px;
+    color: #ebfbff;
+}
+.footer-itens{
+   
+    padding: 30px 0;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+.footer-item li{
+    margin-bottom: 20px;
+    max-width: 350px;
+}
+.infos li{
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+    gap: 20px;
+}
+.footer-item a{
+    color: #ebfbff;
+}
+.footer-item a:hover{
+    text-decoration: underline;
+}
+.socials li{
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+.socials li a{
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    border: 1px solid #ebfbff;
+
+    padding: 8px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.socials li a:hover{
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+}
+.copyright{
+    text-align: right;
+}
+
+
+
+
+/* responsivo */
+@media only screen and (max-width: 768px){
+    .header-logo{
+        width: 200px;
+    }
+    .intro{
+        flex-direction: column;
+    }
+    .intro-info {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .intro-info p{
+        margin: 40px auto;
+        max-width: 300px;
+    }
+    .intro-img{
+        max-width: 500px;
+    }
+
+    .sobre-item{
+        flex-direction: column;
+    }
+    .sobre-info{
+        text-align: center;
+        padding: 20px;
+    }
+    .sobre-info p{
+        max-width: 460px;
+    }
+    .sobre-img{
+        order: -1;
+    }
+    
+    .info-box{
+        margin: 0 auto;
+    }
+    .btn{
+        padding: 16px 32px;
+    }
+
+
+    footer{
+        padding: 60px 20px;
+    }
+    .footer-itens{
+        grid-template-columns: 1fr;
+    }
+    .footer-item li{
+        margin-bottom: 10px;
+    }
+    .socials, .copyright{
+        text-align: center;
+    }
+   
+}
